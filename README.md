@@ -1,3 +1,5 @@
+[English](README.md) | [简体中文](README.zh-CN.md)
+
 # FireFlyGateway
 
 FireFlyGateway is a lightweight, rule-driven AI request gateway. It sits between your local AI tools and upstream AI API providers to inject system prompts and conversation snippets automatically, enabling centralized, reusable conversation shaping without changing clients.
