@@ -122,7 +122,7 @@ Rule schema:
 - The gateway removes the Key and appends the `Content` messages to the end of the conversation history.
 - Note: Conversation order is typically System → User → Model → ... → Model → User
   - Appending a final `model` message means the request ends with a model turn. Provider behavior varies:
-    - Gemini: commonly continues generation starting from the injected content (docs not explicit)
+    - Gemini: Different models behave inconsistently. 2.5Flash will process this message as a user message and attempt to complete it (she is outputting as a user!), while 2.5Pro will start generating content based on this message. Notably, this insertion operation appears to affect the display of the chain of thought; although in a small number of cases it was observed that the model first outputs content and then a thought summary, in most cases the thought summary was not displayed. However, the thinking process itself should still be present, as a positive correlation was observed between problem difficulty and the first token latency.
     - Claude: explicitly supports continuing from the injected content
     - DeepSeek: docs suggest extra parameters are needed, but it often continues without them
     - OpenAI: not supported

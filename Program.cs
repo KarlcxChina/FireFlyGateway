@@ -11,14 +11,7 @@ builder.Services.Configure<List<OverWriteRoleRule>>(builder.Configuration.GetSec
 
 builder.Services.AddControllers();
 
-builder.Services.AddHttpClient(Microsoft.Extensions.Options.Options.DefaultName)
-    .ConfigurePrimaryHttpMessageHandler(() =>
-    {
-        return new HttpClientHandler
-        {
-            ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
-        };
-    });
+builder.Services.AddHttpClient(Microsoft.Extensions.Options.Options.DefaultName);
 
 
 builder.Services.AddScoped<IAiGatewayProcessor, DefaultAiGatewayProcessor>();
