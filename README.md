@@ -2,7 +2,7 @@
 
 # FireflyGateway
 
-![FireflyGateway](./firefly gateway.png)
+![FireflyGateway](https://github.com/KarlcxChina/FireflyGateway/blob/main/Firefly%20Gateway.png)
 
 FireflyGateway is a lightweight, rule-driven AI request gateway. It sits between your local AI tools and upstream AI API providers to inject system prompts and conversation snippets automatically, enabling centralized, reusable conversation shaping without changing clients.
 

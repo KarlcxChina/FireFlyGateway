@@ -1,6 +1,6 @@
 # FireflyGateway
 
-![FireflyGateway](./firefly gateway.png)
+![FireflyGateway](https://github.com/KarlcxChina/FireflyGateway/blob/main/Firefly%20Gateway.png)
 
 FireflyGateway 是一个轻量的规则驱动 AI 请求网关，位于本机 AI 工具与上游 AI API 提供商之间。它通过在系统提示词与对话历史中自动注入内容，实现集中、可复用的对话定制，而无需改动客户端。
 
