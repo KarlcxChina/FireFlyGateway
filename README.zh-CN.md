@@ -1,8 +1,8 @@
-# FireFlyGateway
+# FireflyGateway
 
-FireFlyGateway 是一个轻量的规则驱动 AI 请求网关，位于本机 AI 工具与上游 AI API 提供商之间。它通过在系统提示词与对话历史中自动注入内容，实现集中、可复用的对话定制，而无需改动客户端。
+FireflyGateway 是一个轻量的规则驱动 AI 请求网关，位于本机 AI 工具与上游 AI API 提供商之间。它通过在系统提示词与对话历史中自动注入内容，实现集中、可复用的对话定制，而无需改动客户端。
 
-- 仓库：https://github.com/KarlcxChina/FireFlyGateway
+- 仓库：https://github.com/KarlcxChina/FireflyGateway
 - 语言：C#（.NET 8）
 - 支持 Docker 运行
 
@@ -42,7 +42,7 @@ FireFlyGateway 是一个轻量的规则驱动 AI 请求网关，位于本机 AI 
       "Type": "sys",
       "Key": "{{sys}}",
       "Content": [
-        { "text": "你是 FireFlyGateway，一个简洁且安全的助手。遵循组织策略，不要泄露内部密钥。" }
+        { "text": "你是 FireflyGateway，一个简洁且安全的助手。遵循组织策略，不要泄露内部密钥。" }
       ]
     },
     {
@@ -144,7 +144,7 @@ FireFlyGateway 是一个轻量的规则驱动 AI 请求网关，位于本机 AI 
     "AiEndpointBaseUrl": "YOUR_API_ENDPOINT_BASE_URL"
   }
   ```
-- 将您的上游API提供商 BaseURL 填入 AiEndpointBaseUrl，FireFlyGateway即可将请求转发至上游。
+- 将您的上游API提供商 BaseURL 填入 AiEndpointBaseUrl，FireflyGateway即可将请求转发至上游。
 
 ## 运行方式
 
@@ -155,8 +155,8 @@ FireFlyGateway 是一个轻量的规则驱动 AI 请求网关，位于本机 AI 
 本地运行：
 ```bash
 # 1）克隆项目
-git clone https://github.com/KarlcxChina/FireFlyGateway.git
-cd FireFlyGateway
+git clone https://github.com/KarlcxChina/FireflyGateway.git
+cd FireflyGateway
 
 # 2）配置上游地址
 # - 编辑 appsettings.json：设置 AiEndpointBaseUrl
@@ -171,7 +171,7 @@ dotnet run
 Docker：
 ```bash
 # 构建镜像
-docker build -t firefly-gateway .
+docker build -t Firefly-gateway .
 
 # 运行容器
 # - 通过挂载 rules.json 便于热更新
@@ -180,7 +180,7 @@ docker run --rm \
   -p 8080:8080 \
   -v "$PWD/rules.json:/app/rules.json" \
   -e ASPNETCORE_ENVIRONMENT=Development \
-  firefly-gateway
+  Firefly-gateway
 ```
 
 说明：

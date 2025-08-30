@@ -1,12 +1,12 @@
-﻿using FireFlyGateway.Controllers;
-using FireFlyGateway.Services.ProviderProcessors;
+﻿using FireflyGateway.Controllers;
+using FireflyGateway.Services.ProviderProcessors;
 using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Text.Json.Nodes;
 using System.Text.Unicode;
 
 
-namespace FireFlyGateway.Services
+namespace FireflyGateway.Services
 {
     public class DefaultAiGatewayProcessor : IAiGatewayProcessor
     {

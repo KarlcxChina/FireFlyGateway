@@ -1,9 +1,9 @@
-﻿using FireFlyGateway.Controllers;
+﻿using FireflyGateway.Controllers;
 using System.Text.Json;
 using System.Text.Json.Nodes;
 using System.Xml.Linq;
 
-namespace FireFlyGateway.Services.ProviderProcessors
+namespace FireflyGateway.Services.ProviderProcessors
 {
     public class OpenAiProcessor : IProviderProcessor
     {

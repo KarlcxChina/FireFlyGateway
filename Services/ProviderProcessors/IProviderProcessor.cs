@@ -1,5 +1,5 @@
 ﻿using System.Text.Json.Nodes;
-namespace FireFlyGateway.Services.ProviderProcessors
+namespace FireflyGateway.Services.ProviderProcessors
 {
     /// <summary>
     /// A contract that defines the JSON processing logic for a specific AI provider

@@ -1,6 +1,6 @@
-@FireFlyGateway_HostAddress = http://localhost:5049
+@FireflyGateway_HostAddress = http://localhost:5049
 
-GET {{FireFlyGateway_HostAddress}}/weatherforecast/
+GET {{FireflyGateway_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###

@@ -1,4 +1,4 @@
-﻿namespace FireFlyGateway.Services.ProviderProcessors
+﻿namespace FireflyGateway.Services.ProviderProcessors
 {
     public class OverWriteRoleRule
     {

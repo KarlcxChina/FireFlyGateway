@@ -1,4 +1,4 @@
-﻿namespace FireFlyGateway.Services
+﻿namespace FireflyGateway.Services
 {
     /// <summary>
     /// Defines the contract for handling gateway request bodies

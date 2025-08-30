@@ -14,19 +14,19 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["FireFlyGateway.csproj", "."]
-RUN dotnet restore "./FireFlyGateway.csproj"
+COPY ["FireflyGateway.csproj", "."]
+RUN dotnet restore "./FireflyGateway.csproj"
 COPY . .
 WORKDIR "/src/."
-RUN dotnet build "./FireFlyGateway.csproj" -c $BUILD_CONFIGURATION -o /app/build
+RUN dotnet build "./FireflyGateway.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 # This stage publishes the service project to be copied to the final stage.
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./FireFlyGateway.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./FireflyGateway.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 # This stage is used for production or when running from VS in regular mode.
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "FireFlyGateway.dll"]
+ENTRYPOINT ["dotnet", "FireflyGateway.dll"]

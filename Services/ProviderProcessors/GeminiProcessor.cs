@@ -2,7 +2,7 @@
 using System.Text.Json;
 using System.Text.Json.Nodes;
 
-namespace FireFlyGateway.Services.ProviderProcessors
+namespace FireflyGateway.Services.ProviderProcessors
 {
     public class GeminiProcessor : IProviderProcessor
     {

@@ -1,10 +1,10 @@
 [English](README.md) | [简体中文](README.zh-CN.md)
 
-# FireFlyGateway
+# FireflyGateway
 
-FireFlyGateway is a lightweight, rule-driven AI request gateway. It sits between your local AI tools and upstream AI API providers to inject system prompts and conversation snippets automatically, enabling centralized, reusable conversation shaping without changing clients.
+FireflyGateway is a lightweight, rule-driven AI request gateway. It sits between your local AI tools and upstream AI API providers to inject system prompts and conversation snippets automatically, enabling centralized, reusable conversation shaping without changing clients.
 
-- Repository: https://github.com/KarlcxChina/FireFlyGateway
+- Repository: https://github.com/KarlcxChina/FireflyGateway
 - Language: C# (.NET 8)
 - Docker-ready
 
@@ -44,7 +44,7 @@ Example `rules.json` (all three modes):
       "Type": "sys",
       "Key": "{{sys}}",
       "Content": [
-        { "text": "You are FireFlyGateway, a concise and safe assistant. Follow organizational policies and never reveal internal secrets." }
+        { "text": "You are FireflyGateway, a concise and safe assistant. Follow organizational policies and never reveal internal secrets." }
       ]
     },
     {
@@ -146,7 +146,7 @@ Rule schema:
     "AiEndpointBaseUrl": "YOUR_API_ENDPOINT_BASE_URL"
   }
   ```
-- Set `AiEndpointBaseUrl` to your upstream API provider’s base URL; FireFlyGateway will forward requests upstream.
+- Set `AiEndpointBaseUrl` to your upstream API provider’s base URL; FireflyGateway will forward requests upstream.
 
 ## Running
 
@@ -157,8 +157,8 @@ Prerequisites:
 Local:
 ```bash
 # 1) Clone
-git clone https://github.com/KarlcxChina/FireFlyGateway.git
-cd FireFlyGateway
+git clone https://github.com/KarlcxChina/FireflyGateway.git
+cd FireflyGateway
 
 # 2) Configure upstream base URL
 # - Edit appsettings.json: set AiEndpointBaseUrl
@@ -173,7 +173,7 @@ dotnet run
 Docker:
 ```bash
 # Build image
-docker build -t firefly-gateway .
+docker build -t Firefly-gateway .
 
 # Run container
 # - Mount rules.json for convenient hot updates
@@ -182,7 +182,7 @@ docker run --rm \
   -p 8080:8080 \
   -v "$PWD/rules.json:/app/rules.json" \
   -e ASPNETCORE_ENVIRONMENT=Development \
-  firefly-gateway
+  Firefly-gateway
 ```
 
 Notes:

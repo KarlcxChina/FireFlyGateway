@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Text;
-using FireFlyGateway.Services;
+using FireflyGateway.Services;
 
 
-namespace FireFlyGateway.Controllers
+namespace FireflyGateway.Controllers
 {
     [ApiController]
     [Route("/")]

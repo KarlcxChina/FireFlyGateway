@@ -1,5 +1,5 @@
-using FireFlyGateway.Services;
-using FireFlyGateway.Services.ProviderProcessors;
+using FireflyGateway.Services;
+using FireflyGateway.Services.ProviderProcessors;
 
 
 var builder = WebApplication.CreateBuilder(args);
