@@ -1,0 +1,6 @@
+@FireFlyGateway_HostAddress = http://localhost:5049
+
+GET {{FireFlyGateway_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

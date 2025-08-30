@@ -1,0 +1,26 @@
+{
+  "OverWriteRole": [
+    {
+      "Type": "sys",
+      "Key": "{{sys}}",
+      "Content": [
+        { "text": "" }
+      ]
+    },
+    {
+      "Type": "add_before",
+      "Key": "{{add_before}}",
+      "Content": [
+        { "user": "" },
+        { "model": "" }
+      ]
+    },
+    {
+      "Type": "add_after",
+      "Key": "{{add_after}}",
+      "Content": [
+        { "model": "" }
+      ]
+    }
+  ]
+}
